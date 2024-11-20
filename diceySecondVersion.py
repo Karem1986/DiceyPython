@@ -21,7 +21,7 @@ def play_game():
             user_guess = int(input())
         except ValueError:
             print("Invalid input. Please enter a number between 1 and 6.")
-        # After ask again for a number:
+        # After ask again for a number/ Note that if using 'continue' then the number of trials will not be reset to 3. 
             print(f"Trial {trial}: Guess the dice value (1-6):")
             user_guess = int(input())
         print(f"You have {totalTrialsLeft} tries left.")
